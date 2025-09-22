@@ -3,77 +3,80 @@
 @tailwind utilities;
 
 /* Modern Glassmorphism Design System for Muhammad Faizan - Blockchain Developer
-Contemporary design with sophisticated gradients and refined aesthetics.
+Advanced contemporary design with sophisticated gradients and premium aesthetics.
 */
 
 @layer base {
   :root {
-    /* Core Background & Foreground - Modern Dark */
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Core Background & Foreground - Deep Modern Dark */
+    --background: 225 25% 3%;
+    --foreground: 210 20% 95%;
 
     /* Glass Cards & Surfaces */
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 225 25% 3%;
+    --card-foreground: 210 20% 95%;
 
     /* Popover & Overlays */
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 225 25% 3%;
+    --popover-foreground: 210 20% 95%;
 
-    /* Primary Brand Colors - Modern Electric Blue */
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 217 91% 60% / 0.4;
+    /* Primary Brand Colors - Vibrant Emerald */
+    --primary: 158 64% 52%;
+    --primary-foreground: 225 25% 5%;
+    --primary-glow: 158 64% 52% / 0.5;
 
-    /* Secondary - Sophisticated Purple */
-    --secondary: 263 70% 50%;
-    --secondary-foreground: 0 0% 98%;
-    --secondary-glow: 263 70% 50% / 0.4;
+    /* Secondary - Electric Orange */
+    --secondary: 25 95% 53%;
+    --secondary-foreground: 225 25% 5%;
+    --secondary-glow: 25 95% 53% / 0.5;
 
-    /* Accent - Modern Teal */
-    --accent: 173 58% 39%;
-    --accent-foreground: 0 0% 98%;
-    --accent-glow: 173 58% 39% / 0.4;
+    /* Accent - Deep Purple */
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 20% 95%;
+    --accent-glow: 262 83% 58% / 0.5;
 
     /* Muted States */
-    --muted: 240 4.8% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 225 15% 12%;
+    --muted-foreground: 220 9% 55%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 20% 95%;
 
     /* Borders & Inputs */
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 217 91% 60%;
+    --border: 225 15% 18%;
+    --input: 225 15% 15%;
+    --ring: 158 64% 52%;
 
-    /* Radius - More modern rounded corners */
-    --radius: 0.75rem;
+    /* Radius - Refined corners */
+    --radius: 0.875rem;
 
-    /* Custom Glassmorphism Variables - Refined */
-    --glass-bg-primary: rgba(255, 255, 255, 0.05);
-    --glass-bg-secondary: rgba(255, 255, 255, 0.08);
-    --glass-border-primary: rgba(255, 255, 255, 0.1);
-    --glass-border-secondary: rgba(56, 189, 248, 0.2);
+    /* Custom Glassmorphism Variables - Premium */
+    --glass-bg-primary: rgba(255, 255, 255, 0.03);
+    --glass-bg-secondary: rgba(255, 255, 255, 0.06);
+    --glass-border-primary: rgba(255, 255, 255, 0.08);
+    --glass-border-secondary: rgba(34, 197, 94, 0.25);
     
-    /* Modern Glow Effects */
-    --glow-primary: 0 0 30px hsla(217, 91%, 60%, 0.4), 0 0 60px hsla(217, 91%, 60%, 0.2);
-    --glow-secondary: 0 0 30px hsla(263, 70%, 50%, 0.4), 0 0 60px hsla(263, 70%, 50%, 0.2);
-    --glow-accent: 0 0 30px hsla(173, 58%, 39%, 0.4), 0 0 60px hsla(173, 58%, 39%, 0.2);
+    /* Premium Glow Effects */
+    --glow-primary: 0 0 40px hsla(158, 64%, 52%, 0.5), 0 0 80px hsla(158, 64%, 52%, 0.3);
+    --glow-secondary: 0 0 40px hsla(25, 95%, 53%, 0.5), 0 0 80px hsla(25, 95%, 53%, 0.3);
+    --glow-accent: 0 0 40px hsla(262, 83%, 58%, 0.5), 0 0 80px hsla(262, 83%, 58%, 0.3);
     
-    /* Contemporary Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%) 0%, hsl(263, 70%, 50%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(263, 70%, 50%) 0%, hsl(173, 58%, 39%) 100%);
-    --gradient-bg: radial-gradient(ellipse 80% 80% at 50% -20%, hsla(217, 91%, 60%, 0.08), transparent),
-                   radial-gradient(ellipse 80% 80% at 80% 80%, hsla(263, 70%, 50%, 0.05), transparent),
-                   linear-gradient(180deg, hsl(240, 10%, 3.9%) 0%, hsl(240, 12%, 6%) 100%);
-    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    /* Premium Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(158, 64%, 52%) 0%, hsl(25, 95%, 53%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(25, 95%, 53%) 0%, hsl(262, 83%, 58%) 100%);
+    --gradient-bg: 
+      radial-gradient(ellipse 90% 100% at 50% -20%, hsla(158, 64%, 52%, 0.12), transparent),
+      radial-gradient(ellipse 90% 100% at 20% 80%, hsla(25, 95%, 53%, 0.08), transparent),
+      radial-gradient(ellipse 90% 100% at 80% 80%, hsla(262, 83%, 58%, 0.06), transparent),
+      linear-gradient(180deg, hsl(225, 25%, 3%) 0%, hsl(225, 30%, 5%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
 
-    /* Modern Animation Timing */
-    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-spring: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Premium Animation Timing */
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-elastic: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   .dark {
