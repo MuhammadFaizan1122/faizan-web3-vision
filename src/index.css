@@ -2,77 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Futuristic Glassmorphism Design System for Muhammad Faizan - Blockchain Developer
-All colors MUST be HSL. Premium tech aesthetic with neon glows and glass effects.
+/* Modern Glassmorphism Design System for Muhammad Faizan - Blockchain Developer
+Contemporary design with sophisticated gradients and refined aesthetics.
 */
 
 @layer base {
   :root {
-    /* Core Background & Foreground */
-    --background: 220 25% 5%;
-    --foreground: 210 40% 98%;
+    /* Core Background & Foreground - Modern Dark */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
     /* Glass Cards & Surfaces */
-    --card: 220 25% 8%;
-    --card-foreground: 210 40% 98%;
-    --glass-bg: 220 25% 8% / 0.1;
-    --glass-border: 210 40% 80% / 0.1;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
 
     /* Popover & Overlays */
-    --popover: 220 25% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Primary Brand Colors - Neon Aqua */
-    --primary: 180 100% 50%;
-    --primary-foreground: 220 25% 5%;
-    --primary-glow: 180 100% 50% / 0.3;
+    /* Primary Brand Colors - Modern Electric Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 217 91% 60% / 0.4;
 
-    /* Secondary - Neon Violet */
-    --secondary: 270 100% 70%;
-    --secondary-foreground: 220 25% 5%;
-    --secondary-glow: 270 100% 70% / 0.3;
+    /* Secondary - Sophisticated Purple */
+    --secondary: 263 70% 50%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-glow: 263 70% 50% / 0.4;
 
-    /* Accent - Neon Cyan */
-    --accent: 190 100% 60%;
-    --accent-foreground: 220 25% 5%;
-    --accent-glow: 190 100% 60% / 0.3;
+    /* Accent - Modern Teal */
+    --accent: 173 58% 39%;
+    --accent-foreground: 0 0% 98%;
+    --accent-glow: 173 58% 39% / 0.4;
 
     /* Muted States */
-    --muted: 220 25% 12%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 240 4.8% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
     /* Borders & Inputs */
-    --border: 220 25% 15%;
-    --input: 220 25% 10%;
-    --ring: 180 100% 50%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 217 91% 60%;
 
-    /* Radius */
-    --radius: 1rem;
+    /* Radius - More modern rounded corners */
+    --radius: 0.75rem;
 
-    /* Custom Glassmorphism Variables */
-    --glass-bg-primary: hsla(220, 25%, 8%, 0.1);
-    --glass-bg-secondary: hsla(220, 25%, 12%, 0.15);
-    --glass-border-primary: hsla(210, 40%, 80%, 0.1);
-    --glass-border-secondary: hsla(180, 100%, 50%, 0.2);
+    /* Custom Glassmorphism Variables - Refined */
+    --glass-bg-primary: rgba(255, 255, 255, 0.05);
+    --glass-bg-secondary: rgba(255, 255, 255, 0.08);
+    --glass-border-primary: rgba(255, 255, 255, 0.1);
+    --glass-border-secondary: rgba(56, 189, 248, 0.2);
     
-    /* Neon Glow Effects */
-    --neon-aqua: 0 0 20px hsla(180, 100%, 50%, 0.5), 0 0 40px hsla(180, 100%, 50%, 0.3);
-    --neon-violet: 0 0 20px hsla(270, 100%, 70%, 0.5), 0 0 40px hsla(270, 100%, 70%, 0.3);
-    --neon-cyan: 0 0 20px hsla(190, 100%, 60%, 0.5), 0 0 40px hsla(190, 100%, 60%, 0.3);
+    /* Modern Glow Effects */
+    --glow-primary: 0 0 30px hsla(217, 91%, 60%, 0.4), 0 0 60px hsla(217, 91%, 60%, 0.2);
+    --glow-secondary: 0 0 30px hsla(263, 70%, 50%, 0.4), 0 0 60px hsla(263, 70%, 50%, 0.2);
+    --glow-accent: 0 0 30px hsla(173, 58%, 39%, 0.4), 0 0 60px hsla(173, 58%, 39%, 0.2);
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(180, 100%, 50%), hsl(270, 100%, 70%));
-    --gradient-secondary: linear-gradient(135deg, hsl(270, 100%, 70%), hsl(190, 100%, 60%));
-    --gradient-bg: linear-gradient(135deg, hsl(220, 25%, 5%), hsl(230, 30%, 8%));
-    --gradient-glass: linear-gradient(135deg, hsla(220, 25%, 15%, 0.1), hsla(220, 25%, 25%, 0.05));
+    /* Contemporary Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%) 0%, hsl(263, 70%, 50%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(263, 70%, 50%) 0%, hsl(173, 58%, 39%) 100%);
+    --gradient-bg: radial-gradient(ellipse 80% 80% at 50% -20%, hsla(217, 91%, 60%, 0.08), transparent),
+                   radial-gradient(ellipse 80% 80% at 80% 80%, hsla(263, 70%, 50%, 0.05), transparent),
+                   linear-gradient(180deg, hsl(240, 10%, 3.9%) 0%, hsl(240, 12%, 6%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
 
-    /* Animation Timing */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-spring: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Modern Animation Timing */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
@@ -123,49 +124,53 @@ All colors MUST be HSL. Premium tech aesthetic with neon glows and glass effects
     @apply bg-background text-foreground;
     background: var(--gradient-bg);
     overflow-x: hidden;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 @layer components {
-  /* Glassmorphism Base Classes */
+  /* Modern Glassmorphism Base Classes */
   .glass {
     background: var(--glass-bg-primary);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border: 1px solid var(--glass-border-primary);
     border-radius: var(--radius);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   }
 
   .glass-card {
     background: var(--glass-bg-secondary);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border-secondary);
     border-radius: var(--radius);
-    box-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 
+                0 0 0 1px rgba(255, 255, 255, 0.05);
   }
 
   .glass-header {
     background: var(--glass-bg-primary);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border-primary);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
 
-  /* Neon Glow Effects */
+  /* Modern Glow Effects */
   .glow-primary {
-    box-shadow: var(--neon-aqua);
+    box-shadow: var(--glow-primary);
   }
 
   .glow-secondary {
-    box-shadow: var(--neon-violet);
+    box-shadow: var(--glow-secondary);
   }
 
   .glow-accent {
-    box-shadow: var(--neon-cyan);
+    box-shadow: var(--glow-accent);
   }
 
-  /* Animated Background */
+  /* Modern Animated Background */
   .animated-bg {
     position: relative;
     overflow: hidden;
@@ -189,10 +194,11 @@ All colors MUST be HSL. Premium tech aesthetic with neon glows and glass effects
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 80%, hsla(180, 100%, 50%, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, hsla(270, 100%, 70%, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, hsla(190, 100%, 60%, 0.1) 0%, transparent 50%);
-    animation: float 6s ease-in-out infinite;
+    background: 
+      radial-gradient(circle at 25% 25%, hsla(217, 91%, 60%, 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsla(263, 70%, 50%, 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, hsla(173, 58%, 39%, 0.03) 0%, transparent 50%);
+    animation: float 8s ease-in-out infinite;
     z-index: -1;
   }
 
@@ -234,28 +240,34 @@ All colors MUST be HSL. Premium tech aesthetic with neon glows and glass effects
     animation: scaleIn 0.6s ease-out;
   }
 
-  /* Hover Effects */
+  /* Modern Hover Effects */
   .hover-glow-primary:hover {
-    box-shadow: var(--neon-aqua);
-    transform: translateY(-2px);
+    box-shadow: var(--glow-primary);
+    transform: translateY(-1px);
     transition: var(--transition-smooth);
   }
 
   .hover-glow-secondary:hover {
-    box-shadow: var(--neon-violet);
-    transform: translateY(-2px);
+    box-shadow: var(--glow-secondary);
+    transform: translateY(-1px);
     transition: var(--transition-smooth);
   }
 
   .hover-glow-accent:hover {
-    box-shadow: var(--neon-cyan);
-    transform: translateY(-2px);
+    box-shadow: var(--glow-accent);
+    transform: translateY(-1px);
     transition: var(--transition-smooth);
   }
 
-  .hover-tilt:hover {
-    transform: perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.02);
-    transition: var(--transition-spring);
+  .hover-lift:hover {
+    transform: translateY(-4px) scale(1.02);
+    transition: var(--transition-bounce);
+  }
+
+  .hover-glass:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transition: var(--transition-smooth);
   }
 }
 

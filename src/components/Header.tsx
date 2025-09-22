@@ -41,7 +41,7 @@ const Header = () => {
         <Button 
           onClick={() => scrollToSection('contact')} 
           variant="outline"
-          className="glass border-primary/30 text-primary hover:bg-primary/10 hover:glow-primary"
+          className="glass border-primary/30 text-primary hover:bg-primary/10 hover-glow-primary hover-glass transition-all duration-300"
         >
           Let's Connect
         </Button>
