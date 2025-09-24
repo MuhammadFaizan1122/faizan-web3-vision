@@ -48,62 +48,127 @@ const Hero = () => {
         <div className="absolute bottom-1/4 left-1/3 w-32 h-32 border border-accent/30 rounded-full animate-glow" />
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        {/* Premium Glass Card Container */}
-        <div className="glass-card p-10 md:p-16 animate-scale-in backdrop-blur-xl border-2 border-primary/20 shadow-glass-lg">
-          {/* Status Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full glass border-primary/30 text-primary text-sm font-medium mb-8 animate-fade-in">
-            <div className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse" />
-            Available for Web3 Projects
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto">
+        {/* Ultra Modern Glass Container */}
+        <div className="relative backdrop-blur-2xl bg-gradient-to-br from-background/10 via-background/5 to-background/10 border border-white/10 rounded-3xl p-8 sm:p-12 lg:p-20 shadow-2xl animate-scale-in">
+          {/* Gradient Border Effect */}
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 rounded-3xl blur-xl -z-10 animate-pulse" />
+          
+          {/* Floating Status Badge */}
+          <div className="inline-flex items-center px-6 py-3 rounded-full backdrop-blur-xl bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30 text-primary text-sm font-semibold mb-12 animate-fade-in shadow-lg hover:scale-105 transition-transform duration-300">
+            <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mr-3 animate-pulse shadow-glow-primary" />
+            ✨ Available for Revolutionary Web3 Projects
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-hero font-bold mb-8 animate-slide-up">
-            <span className="text-gradient">Muhammad Faizan</span>
-            <br />
-            <span className="text-foreground font-light">Blockchain Developer</span>
-          </h1>
+          {/* Hero Title with Advanced Typography */}
+          <div className="mb-10 animate-slide-up">
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black mb-6 leading-none tracking-tight">
+              <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-gradient-flow font-extrabold">
+                Muhammad
+              </span>
+              <span className="block bg-gradient-to-r from-accent via-primary to-secondary bg-clip-text text-transparent animate-gradient-flow-reverse font-extrabold">
+                Faizan
+              </span>
+            </h1>
+            <div className="relative">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-foreground/90 tracking-wider">
+                <span className="bg-gradient-to-r from-primary/80 to-secondary/80 bg-clip-text text-transparent">
+                  Blockchain Architect
+                </span>
+                <span className="text-foreground/60"> & </span>
+                <span className="bg-gradient-to-r from-secondary/80 to-accent/80 bg-clip-text text-transparent">
+                  Web3 Innovator
+                </span>
+              </h2>
+              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-full animate-pulse" />
+            </div>
+          </div>
           
-          <p className="text-xl md:text-3xl text-muted-foreground mb-12 animate-fade-in leading-relaxed max-w-4xl mx-auto">
-            Crafting the future of <span className="text-gradient-secondary font-semibold">Web3</span> with 
-            <span className="text-primary font-semibold"> Blockchain Innovation</span> and 
-            <span className="text-accent font-semibold"> AI-Powered Solutions</span>
+          {/* Enhanced Description */}
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground/70 mb-14 animate-fade-in leading-relaxed max-w-5xl mx-auto font-medium">
+            Pioneering the next generation of 
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-bold mx-2">
+              decentralized applications
+            </span>
+            with cutting-edge blockchain technology,
+            <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent font-bold mx-2">
+              AI integration
+            </span>
+            and scalable Web3 solutions that reshape digital experiences.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up">
+          {/* Premium Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-slide-up">
             <Button 
               onClick={() => scrollToSection('contact')}
               size="lg"
-              className="px-8 py-6 text-lg bg-primary hover:bg-primary/90 text-primary-foreground hover-glow-primary transition-all duration-500 border-0 shadow-glow-primary font-semibold tracking-wide transform hover:scale-105"
+              className="group relative px-10 py-7 text-lg font-bold bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground rounded-2xl transition-all duration-500 shadow-2xl hover:shadow-primary/25 transform hover:scale-105 hover:-translate-y-1 border-0 overflow-hidden min-w-[220px]"
             >
-              <Eye className="w-6 h-6 mr-3" />
-              Start Your Project
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative flex items-center">
+                <Eye className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" />
+                Launch Project
+              </div>
             </Button>
             
             <Button 
               onClick={() => scrollToSection('projects')}
               variant="outline" 
               size="lg"
-              className="px-8 py-6 text-lg glass border-2 border-secondary/40 text-secondary hover:bg-secondary/15 hover-glow-secondary hover-glass transition-all duration-500 font-semibold tracking-wide transform hover:scale-105"
+              className="group relative px-10 py-7 text-lg font-bold backdrop-blur-xl bg-gradient-to-r from-background/10 to-background/5 border-2 border-secondary/40 text-secondary hover:text-primary hover:border-primary/60 rounded-2xl transition-all duration-500 shadow-xl hover:shadow-secondary/25 transform hover:scale-105 hover:-translate-y-1 min-w-[220px] overflow-hidden"
             >
-              <Download className="w-6 h-6 mr-3" />
-              Explore Portfolio
+              <div className="absolute inset-0 bg-gradient-to-r from-secondary/10 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative flex items-center">
+                <Download className="w-6 h-6 mr-3 group-hover:translate-y-1 transition-transform duration-300" />
+                View Portfolio
+              </div>
             </Button>
           </div>
 
-          {/* Stats or Quick Info */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-primary/20">
-            <div className="text-center animate-fade-in">
-              <div className="text-3xl font-bold text-gradient mb-2">5+</div>
-              <div className="text-sm text-muted-foreground">Years Experience</div>
+          {/* Enhanced Stats Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-12 border-t border-gradient-to-r from-primary/20 via-secondary/20 to-accent/20">
+            <div className="group text-center animate-fade-in hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <div className="text-4xl lg:text-5xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-3 group-hover:animate-pulse">
+                5+
+              </div>
+              <div className="text-sm lg:text-base text-foreground/60 font-medium tracking-wide">
+                Years Mastering Web3
+              </div>
             </div>
-            <div className="text-center animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <div className="text-3xl font-bold text-gradient-secondary mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">Projects Delivered</div>
+            <div className="group text-center animate-fade-in hover:scale-105 transition-transform duration-300 cursor-pointer" style={{ animationDelay: '0.2s' }}>
+              <div className="text-4xl lg:text-5xl font-black bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-3 group-hover:animate-pulse">
+                50+
+              </div>
+              <div className="text-sm lg:text-base text-foreground/60 font-medium tracking-wide">
+                Blockchain Solutions
+              </div>
             </div>
-            <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="text-3xl font-bold text-accent mb-2">24/7</div>
-              <div className="text-sm text-muted-foreground">Global Availability</div>
+            <div className="group text-center animate-fade-in hover:scale-105 transition-transform duration-300 cursor-pointer" style={{ animationDelay: '0.4s' }}>
+              <div className="text-4xl lg:text-5xl font-black bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent mb-3 group-hover:animate-pulse">
+                24/7
+              </div>
+              <div className="text-sm lg:text-base text-foreground/60 font-medium tracking-wide">
+                Global Innovation
+              </div>
             </div>
+          </div>
+
+          {/* Floating Particles Effect */}
+          <div className="absolute inset-0 overflow-hidden rounded-3xl pointer-events-none">
+            {[...Array(8)].map((_, i) => (
+              <div
+                key={i}
+                className={`absolute w-2 h-2 rounded-full opacity-30 animate-float ${
+                  i % 3 === 0 ? 'bg-primary' : i % 3 === 1 ? 'bg-secondary' : 'bg-accent'
+                }`}
+                style={{
+                  left: `${20 + (i * 10)}%`,
+                  top: `${15 + (i * 8)}%`,
+                  animationDelay: `${i * 0.8}s`,
+                  animationDuration: `${4 + i}s`
+                }}
+              />
+            ))}
           </div>
         </div>
 
