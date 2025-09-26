@@ -26,7 +26,7 @@ export const metadata = {
     siteName: "Muhammad Faizan Portfolio",
     images: [
       {
-        url: "https://imfaizan.com/preview.png",
+        url: "/preview.png",
         width: 1200,
         height: 630,
         alt: "Muhammad Faizan Portfolio Preview",
@@ -40,7 +40,7 @@ export const metadata = {
     title: "Muhammad Faizan | Web2, Web3 & Blockchain Developer",
     description:
       "Web2 & Web3 Blockchain Developer, Fullstack Engineer with 5+ years of experience.",
-    images: ["https://imfaizan.com/preview.png"],
+    images: ["/preview.png"],
     creator: "@your_twitter_handle",
   },
 };
