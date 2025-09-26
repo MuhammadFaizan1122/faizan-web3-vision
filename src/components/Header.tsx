@@ -30,7 +30,7 @@ const Header = () => {
           <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
             <span className="text-white font-black text-xl">MF</span>
           </div>
-          <h3 className="text-2xl font-bold text-gradient">
+          <h3 className="text-2xl font-bold text-gradient hidden sm:block">
             Muhammad Faizan
           </h3>
         </div>
