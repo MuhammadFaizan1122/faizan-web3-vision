@@ -1,5 +1,5 @@
-import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
+import Image from 'next/image';
 
 const About = () => {
   const achievements = [
@@ -22,30 +22,12 @@ const About = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Professional Photo Placeholder */}
           <div className="animate-slide-up">
             <Card className="glass-card p-8 hover-tilt">
-              <div className="aspect-square rounded-lg bg-gradient-primary/10 border border-primary/20 flex items-center justify-center mb-6">
-                <div className="w-32 h-32 rounded-full bg-gradient-primary/20 border-2 border-primary/30 flex items-center justify-center">
-                  <span className="text-4xl font-bold text-gradient">MF</span>
-                </div>
-              </div>
-              
-              <div className="space-y-3">
-                {achievements.map((achievement, index) => (
-                  <Badge 
-                    key={index} 
-                    variant="outline" 
-                    className="glass border-primary/30 text-primary hover-glow-primary"
-                  >
-                    {achievement}
-                  </Badge>
-                ))}
-              </div>
+              <Image src="/profilepic.png" alt="faizan" width={500} height={500} className='rounded-lg' />
             </Card>
           </div>
 
-          {/* About Content */}
           <div className="space-y-6 animate-slide-up">
             <Card className="glass-card p-8 hover-glow-primary">
               <h3 className="text-2xl font-bold text-gradient mb-4">
