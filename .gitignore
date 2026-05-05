@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+
+# Next.js build output
+.next/
+
+# Environment variables (Crucial for security)
+.env
+.env.local
+.env.production
+
+# OS metadata
+.DS_Store
