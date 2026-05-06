@@ -32,7 +32,7 @@ const About = () => {
                 </div>
                 <div className="card-info">
                   <h3 className="card-title">Ui/Ux Design</h3>
-                  <p className="card-para">241 Projects</p>
+                  <p className="card-para">40+ Projects</p>
                 </div>
               </div>
             </div>

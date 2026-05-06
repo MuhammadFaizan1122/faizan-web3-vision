@@ -30,7 +30,7 @@ const Header = () => {
               <div className="header-content">
                 <div className="logo">
                   <Link href="/">
-                    <Image className="logo-dark" src="/assets/images/logo/white-logo-reeni.png" alt="Logo" width={150} height={40} />
+                    <Image className="logo-dark" src="/assets/images/logo/white-logo-reeni-1.png" alt="Logo" width={150} height={40} />
                     <Image className="logo-white" src="/assets/images/logo/logo-white.png" alt="Logo" width={150} height={40} />
                   </Link>
                 </div>
@@ -53,9 +53,9 @@ const Header = () => {
                       </ul>
                     </li>
                     <li className="has-dropdown">
-                      <Link href="/project">Project <i className="fa-regular fa-chevron-down"></i></Link>
+                      <Link href="/projects">Project <i className="fa-regular fa-chevron-down"></i></Link>
                       <ul className="submenu">
-                        <li><Link href="/project">Project</Link></li>
+                        <li><Link href="/projects">Project</Link></li>
                         <li><Link href="/project-details">Project Details</Link></li>
                       </ul>
                     </li>
@@ -96,7 +96,7 @@ const Header = () => {
           <div className="header-top">
             <div className="logo">
               <Link href="/" className="logo-area">
-                <Image className="logo-dark" src="/assets/images/logo/white-logo-reeni.png" alt="Logo" width={150} height={40} />
+                <Image className="logo-dark" src="/assets/images/logo/white-logo-reeni-1.png" alt="Logo" width={150} height={40} />
               </Link>
             </div>
             <div className="close-menu">
@@ -110,7 +110,7 @@ const Header = () => {
             <li><Link href="/about">About</Link></li>
             <li><Link href="/services">Services</Link></li>
             <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/project">Project</Link></li>
+            <li><Link href="/projects">Projects</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>

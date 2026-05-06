@@ -7,82 +7,119 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="tmp-footer-area-start tmp-section-gapTop pb--60">
+      {/* Global Scoped Styles for Hover Effects */}
+      <style jsx>{`
+        .ft-link-item {
+          color: #b0b0b0;
+          transition: color 0.3s ease;
+          text-decoration: none;
+        }
+        .ft-link-item:hover {
+          color: #ff0000 !important; /* Your desired Red */
+        }
+        .social-icon {
+          width: 35px;
+          height: 35px;
+          background: #1a1a1a;
+          color: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+          background: #ff0000; /* Turns background red */
+          transform: translateY(-5px); /* Gentle lift animation */
+          color: white;
+        }
+      `}</style>
+
+      <footer className="tmp-footer-area-start tmp-section-gapTop pb--60" style={{ background: "#0f0f0f" }}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-12">
+            {/* Left Column */}
+            <div className="col-lg-5 col-md-6 col-sm-12">
               <div className="single-footer-wrapper">
                 <div className="logo">
                   <Link href="/">
                     <Image
-                      src="/assets/images/logo/white-logo-reeni.png"
+                      src="/assets/images/logo/white-logo-reeni-1.png"
                       alt="logo"
-                      width={120}
-                      height={40}
+                      width={150}
+                      height={55}
                       style={{ height: "auto" }}
                     />
                   </Link>
                 </div>
-                <h2 className="title mt--30" style={{ color: "white", fontSize: "40px", fontWeight: "700" }}>
-                  Get Ready To Create <br /> Great
+                <h2 className="title mt--30" style={{ color: "white", fontSize: "42px", lineHeight: "1.2" }}>
+                  <span style={{ fontWeight: "800" }}>Get Ready</span> <span style={{ fontWeight: "300" }}>To Create</span> <br />
+                  <span style={{ fontWeight: "300" }}>Great</span>
                 </h2>
-                <div className="newslatter mt--30" style={{ border: "none", padding: 0 }}>
-                  <form action="#" className="newsletter-form-1" style={{ background: "transparent", borderBottom: "1px solid rgba(255,255,255,0.2)", borderRadius: 0, padding: "10px 0" }}>
-                    <input 
-                      type="email" 
-                      placeholder="Email Adress" 
-                      style={{ background: "transparent", color: "white", border: "none", padding: 0 }}
+                <div className="newslatter mt-50" style={{ maxWidth: "350px" }}>
+                  <form action="#" className="newsletter-form-1" style={{ background: "transparent", borderBottom: "1px solid rgba(255,255,255,0.2)", padding: "12px", display: "flex", alignItems: "center", gap: "20px" }}>
+                    <input
+                      type="email"
+                      placeholder="Email Address"
+                      style={{ background: "transparent", color: "white", border: "none", outline: "none", width: "100%", fontSize: "14px" }}
                     />
-                    <span className="form-icon" style={{ background: "transparent", minWidth: "auto" }}>
-                      <i className="fa-regular fa-envelope" style={{ color: "white" }}></i>
-                    </span>
+                    <button style={{ background: "transparent", border: "none", color: "white" }}>
+                      <i className="fa-regular fa-paper-plane"></i>
+                    </button>
                   </form>
                 </div>
               </div>
             </div>
 
+            {/* Middle Column: Quick Links with Red Hover */}
             <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="quick-link-wrap ml--50 ml_sm--0 mt_sm--30">
-                <h5 className="ft-title">Quick Link</h5>
-                <ul className="ft-link tmp-link-animation">
-                  <li><Link href="/about">About Me</Link></li>
-                  <li><a href="/#services">Service</a></li>
-                  <li><Link href="/contact">Contact Me</Link></li>
-                  <li><a href="/#blog">Blog Post</a></li>
-                  <li><a href="/#pricing">Pricing</a></li>
+              <div className="quick-link-wrap mt_sm--30">
+                <h5 className="ft-title" style={{ color: "white", fontWeight: "700", marginBottom: "30px" }}>Quick Link</h5>
+                <ul className="ft-link" style={{ listStyle: "none", padding: 0, lineHeight: "2.5" }}>
+                  <li><Link href="/about" className="ft-link-item">About Me</Link></li>
+                  <li><a href="/#services" className="ft-link-item">Service</a></li>
+                  <li><Link href="/contact" className="ft-link-item">Contact Me</Link></li>
+                  <li><a href="/#blog" className="ft-link-item">Blog Post</a></li>
+                  <li><a href="/#pricing" className="ft-link-item">Pricing</a></li>
                 </ul>
               </div>
             </div>
 
-            <div className="col-lg-5 col-md-6 col-sm-6">
+            {/* Right Column: Contact & Socials with Animation */}
+            <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-footer-wrapper contact-wrap mt_sm--30">
-                <h5 className="ft-title">Contact</h5>
-                <ul className="ft-link tmp-link-animation">
-                  <li className="mb--20">
-                    <span className="ft-icon" style={{ background: "var(--color-primary)", width: "40px", height: "40px", borderRadius: "50%", display: "inline-flex", alignItems: "center", justifyContent: "center", marginRight: "15px" }}>
-                      <i className="fa-solid fa-envelope" style={{ color: "white", fontSize: "14px" }}></i>
+                <h5 className="ft-title" style={{ color: "white", fontWeight: "700", marginBottom: "30px" }}>Contact</h5>
+                <ul className="ft-link" style={{ listStyle: "none", padding: 0 }}>
+                  <li className="mb--20" style={{ display: "flex", alignItems: "center", gap: "15px", color: "#b0b0b0" }}>
+                    <span style={{ background: "#1a1a1a", width: "35px", height: "35px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <i className="fa-solid fa-envelope" style={{ fontSize: "12px" }}></i>
                     </span>
-                    <a href="mailto:example@gmail.com">example@gmail.com</a>
+                    <a href="mailto:muh.faizaan@gmail.com" className="ft-link-item">muh.faizaan@gmail.com</a>
                   </li>
-                  <li className="mb--20">
-                    <span className="ft-icon" style={{ background: "var(--color-primary)", width: "40px", height: "40px", borderRadius: "50%", display: "inline-flex", alignItems: "center", justifyContent: "center", marginRight: "15px" }}>
-                      <i className="fa-solid fa-location-dot" style={{ color: "white", fontSize: "14px" }}></i>
+                  <li className="mb--20" style={{ display: "flex", alignItems: "center", gap: "15px", color: "#b0b0b0" }}>
+                    <span style={{ background: "#1a1a1a", width: "35px", height: "35px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <i className="fa-solid fa-location-dot" style={{ fontSize: "12px" }}></i>
                     </span>
-                    3891 Ranchview Dr. Richardson
+                    11-F, New karachi, Karachi, Pakistan
                   </li>
-                  <li className="mb--30">
-                    <span className="ft-icon" style={{ background: "var(--color-primary)", width: "40px", height: "40px", borderRadius: "50%", display: "inline-flex", alignItems: "center", justifyContent: "center", marginRight: "15px" }}>
-                      <i className="fa-solid fa-phone" style={{ color: "white", fontSize: "14px" }}></i>
+                  <li className="mb--30" style={{ display: "flex", alignItems: "center", gap: "15px", color: "#b0b0b0" }}>
+                    <span style={{ background: "#1a1a1a", width: "35px", height: "35px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <i className="fa-solid fa-phone" style={{ fontSize: "12px" }}></i>
                     </span>
-                    <a href="tel:01245789321">01245789321</a>
+                    <a href="tel:+923002493788">+92 300 249 3788</a>
                   </li>
                 </ul>
+
                 <div className="social-link-style-2 mt--30">
-                  <ul className="social-link" style={{ display: "flex", gap: "15px", listStyle: "none", padding: 0 }}>
-                    <li><a href="#" style={{ width: "40px", height: "40px", background: "rgba(255,255,255,0.05)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}><i className="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#" style={{ width: "40px", height: "40px", background: "rgba(255,255,255,0.05)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}><i className="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="#" style={{ width: "40px", height: "40px", background: "rgba(255,255,255,0.05)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}><i className="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#" style={{ width: "40px", height: "40px", background: "rgba(255,255,255,0.05)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}><i className="fa-brands fa-facebook-f"></i></a></li>
+                  <ul style={{ display: "flex", gap: "12px", listStyle: "none", padding: 0 }}>
+                    {['instagram', 'linkedin-in', 'twitter', 'facebook-f'].map((icon) => (
+                      <li key={icon}>
+                        <a href="#" className="social-icon">
+                          <i className={`fa-brands fa-${icon}`}></i>
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -90,19 +127,18 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-
-      <div className="copyright-area-one">
+      <div className="copyright-area-one" style={{ background: "#0f0f0f", borderTop: "1px solid rgba(255,255,255,0.05)", padding: "20px 0" }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="main-wrapper tmp-scroll-trigger animation-order-1">
-                <p className="copy-right-para" style={{ margin: 0 }}>
-                  ©InversWeb {new Date().getFullYear()} | All Rights Reserved
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "20px" }}>
+                <p style={{ margin: 0, color: "#b0b0b0", fontSize: "14px" }}>
+                  <span style={{ fontWeight: "700", color: "white" }}>©Muhammad Faizan</span> {new Date().getFullYear()} | All Rights Reserved
                 </p>
-                <ul className="tmp-link-animation" style={{ display: "flex", gap: "20px", listStyle: "none", padding: 0, margin: 0 }}>
-                  <li><Link href="/terms">Trams & Condition</Link></li>
-                  <li><Link href="/privacy">Privacy Policy</Link></li>
-                  <li><Link href="/contact">Contact Us</Link></li>
+                <ul style={{ display: "flex", gap: "20px", listStyle: "none", padding: 0, margin: 0, fontSize: "14px" }}>
+                  <li><Link href="/terms" style={{ color: "white", fontWeight: "600" }}>Trams & Condition</Link></li>
+                  <li><Link href="/privacy" style={{ color: "white", fontWeight: "600" }}>Privacy Policy</Link></li>
+                  <li><Link href="/contact" style={{ color: "white", fontWeight: "600" }}>Contact Us</Link></li>
                 </ul>
               </div>
             </div>

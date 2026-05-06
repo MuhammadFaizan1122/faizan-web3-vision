@@ -5,10 +5,10 @@ import Link from "next/link";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const specialties = [
-  { icon: "fa-light fa-pen-ruler", title: "Web Design", count: "120 Projects" },
-  { icon: "fa-light fa-bezier-curve", title: "Ui/Ux Design", count: "241 Projects" },
-  { icon: "fa-light fa-lightbulb", title: "Web Research", count: "240 Projects" },
-  { icon: "fa-light fa-envelope", title: "Marketing", count: "331 Prodect" },
+  { icon: "fa-light fa-pen-ruler", title: "Web Design", count: "50+ Projects" },
+  { icon: "fa-light fa-bezier-curve", title: "Ui/Ux Design", count: "40+ Projects" },
+  { icon: "fa-light fa-lightbulb", title: "Web Research", count: "100+ Projects" },
+  { icon: "fa-light fa-envelope", title: "Marketing", count: "20+ Prodect" },
 ];
 
 const Specialties = () => {

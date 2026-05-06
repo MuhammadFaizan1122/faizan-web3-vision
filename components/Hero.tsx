@@ -12,6 +12,7 @@ if (typeof window !== "undefined") {
 import Typewriter from "./Typewriter";
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import Link from "next/link";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -29,15 +30,15 @@ const Hero = () => {
                 <div className="main-img">
                   <Image
                     className="tmp-zoom-in"
-                    src="/assets/images/banner/banner-user-image-two.png"
+                    src="/assets/images/banner/prof.png"
                     alt="banner-img"
                     width={0}
                     height={0}
                     style={{ width: '80%', height: 'auto' }}
                     priority
                   />
-                  <h2 className="banner-big-text-1 up-down-2">Ux Designer</h2>
-                  <h2 className="banner-big-text-2 up-down">Ux Designer</h2>
+                  <h2 className="banner-big-text-1 up-down-2">Full Stack Developer</h2>
+                  <h2 className="banner-big-text-2 up-down">Full Stack Developer</h2>
                   <div className="benner-two-bg-red-img">
                     <Image
                       src="/assets/images/banner/banner-user-image-two-red-bg.png"
@@ -63,7 +64,7 @@ const Hero = () => {
               <div className="inner">
                 <span className="sub-title tmp-fade-in">I am</span>
                 <h1 className="title tmp-fade-in">
-                  Muhammad Faizan, a Full Stuck <br />
+                  Muhammad Faizan, a Full Stuck {' '}
                   <span className="header-caption">
                     <span className="cd-headline clip is-full-width">
                       <span className="cd-words-wrapper">
@@ -76,13 +77,13 @@ const Hero = () => {
                   A personal <span>portfolio</span> is a collection of your work, that is achievements, and skills that highlights in your abilities and professional <span>web design</span> growth.
                 </p>
                 <div className="button-area-banner-two tmp-fade-in">
-                  <a className="tmp-btn hover-icon-reverse radius-round" href="#">
+                  <Link className="tmp-btn hover-icon-reverse radius-round" href="/projects">
                     <span className="icon-reverse-wrapper">
-                      <span className="btn-text">More About Us</span>
+                      <span className="btn-text">View My Work</span>
                       <span className="btn-icon"><i className="fa-sharp fa-regular fa-arrow-right"></i></span>
                       <span className="btn-icon"><i className="fa-sharp fa-regular fa-arrow-right"></i></span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="find-me-on tmp-fade-in">
                   <h2 className="find-me-on-title">Find me on</h2>
