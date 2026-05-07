@@ -20,7 +20,7 @@ const AboutPage = () => {
       <Skills />
       <AboutCounterSection />
       <EducationExperience />
-      <PricingPlan />
+      {/* <PricingPlan /> */}
       <GetInTouch />
 
       <Footer />

@@ -11,45 +11,46 @@ const SkillsProgress = () => {
     <div className="tmp-skill-area tmp-section-gapTop">
       <div className="container">
         <div className="row g-5">
+          {/* Column 1: Core Development (Frontend & Backend) */}
           <div className="col-lg-6">
             <div className="progress-wrapper">
               <div className="content">
                 <h2 className="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  Design Skill <span><Image src="/assets/images/custom-line/custom-line.png" alt="custom-line" width={100} height={20} /></span>
+                  Core Development <span><Image src="/assets/images/custom-line/custom-line.png" alt="custom-line" width={100} height={20} /></span>
                 </h2>
-                
-                <div className="progress-charts">
-                  <h6 className="heading heading-h6">PHOTOSHOT</h6>
-                  <div className="progress">
-                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{ width: "100%", visibility: "visible", animationDuration: "0.5s", animationDelay: "0.3s", animationName: "fadeInLeft" }} aria-valuenow={100} aria-valuemin={0} aria-valuemax={100}>
-                      <span className="percent-label">100%</span>
-                    </div>
-                  </div>
-                </div>
 
                 <div className="progress-charts">
-                  <h6 className="heading heading-h6">FIGMA</h6>
+                  <h6 className="heading heading-h6">FRONTEND (REACT, NEXT.JS, TS, VUE.JS, ANGULAR.JS, REACT NATIVE)</h6>
                   <div className="progress">
-                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style={{ width: "95%", visibility: "visible", animationDuration: "0.6s", animationDelay: "0.4s", animationName: "fadeInLeft" }} aria-valuenow={95} aria-valuemin={0} aria-valuemax={100}>
+                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{ width: "95%" }} aria-valuenow={95} aria-valuemin={0} aria-valuemax={100}>
                       <span className="percent-label">95%</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="progress-charts">
-                  <h6 className="heading heading-h6">ADOBE XD</h6>
+                  <h6 className="heading heading-h6">BACKEND (NODE.JS, EXPRESS, NEST.JS)</h6>
                   <div className="progress">
-                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style={{ width: "60%", visibility: "visible", animationDuration: "0.7s", animationDelay: "0.5s", animationName: "fadeInLeft" }} aria-valuenow={60} aria-valuemin={0} aria-valuemax={100}>
-                      <span className="percent-label">60%</span>
+                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style={{ width: "90%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
+                      <span className="percent-label">90%</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="progress-charts">
-                  <h6 className="heading heading-h6">ADOBE ILLUSTRATOR</h6>
+                  <h6 className="heading heading-h6">DATABASES (MONGODB, POSTGRES, FIREBASE, MYSQL, SQLITE)</h6>
                   <div className="progress">
-                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style={{ width: "70%", visibility: "visible", animationDuration: "0.8s", animationDelay: "0.6s", animationName: "fadeInLeft" }} aria-valuenow={70} aria-valuemin={0} aria-valuemax={100}>
-                      <span className="percent-label">70%</span>
+                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style={{ width: "85%" }} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}>
+                      <span className="percent-label">85%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="progress-charts">
+                  <h6 className="heading heading-h6">UI FRAMEWORKS (TAILWIND, CSS3, CHAKRA UI, MATERIAL UI, BOOTSTRAP)</h6>
+                  <div className="progress">
+                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style={{ width: "98%" }} aria-valuenow={98} aria-valuemin={0} aria-valuemax={100}>
+                      <span className="percent-label">98%</span>
                     </div>
                   </div>
                 </div>
@@ -57,45 +58,46 @@ const SkillsProgress = () => {
             </div>
           </div>
 
+          {/* Column 2: Modern Stack (Web3, Cloud & Design) */}
           <div className="col-lg-6">
             <div className="progress-wrapper">
               <div className="content">
                 <h2 className="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  Development Skill <span><Image src="/assets/images/custom-line/custom-line.png" alt="custom-line" width={100} height={20} /></span>
+                  Modern Stack <span><Image src="/assets/images/custom-line/custom-line.png" alt="custom-line" width={100} height={20} /></span>
                 </h2>
-                
+
                 <div className="progress-charts">
-                  <h6 className="heading heading-h6">HTML</h6>
+                  <h6 className="heading heading-h6">BLOCKCHAIN & SMART CONTRACTS</h6>
                   <div className="progress">
-                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{ width: "100%", visibility: "visible", animationDuration: "0.5s", animationDelay: "0.3s", animationName: "fadeInLeft" }} aria-valuenow={100} aria-valuemin={0} aria-valuemax={100}>
-                      <span className="percent-label">100%</span>
+                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{ width: "80%" }} aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>
+                      <span className="percent-label">80%</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="progress-charts">
-                  <h6 className="heading heading-h6">CSS</h6>
+                  <h6 className="heading heading-h6">CLOUD SERVICES (AWS, FIREBASE, CLOUDFLARE)</h6>
                   <div className="progress">
-                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style={{ width: "95%", visibility: "visible", animationDuration: "0.6s", animationDelay: "0.4s", animationName: "fadeInLeft" }} aria-valuenow={95} aria-valuemin={0} aria-valuemax={100}>
+                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style={{ width: "75%" }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
+                      <span className="percent-label">75%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="progress-charts">
+                  <h6 className="heading heading-h6">DESIGN (FIGMA, PHOTOSHOP, CANVA, ADOBE XD, ADOBE ILLUSTRATOR)</h6>
+                  <div className="progress">
+                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style={{ width: "90%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
+                      <span className="percent-label">90%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="progress-charts">
+                  <h6 className="heading heading-h6">VERSION CONTROL (GITHUB, GITLAB, BITBUCKET, GITHUB Copilot)</h6>
+                  <div className="progress">
+                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style={{ width: "95%" }} aria-valuenow={95} aria-valuemin={0} aria-valuemax={100}>
                       <span className="percent-label">95%</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="progress-charts">
-                  <h6 className="heading heading-h6">Javascript</h6>
-                  <div className="progress">
-                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style={{ width: "60%", visibility: "visible", animationDuration: "0.7s", animationDelay: "0.5s", animationName: "fadeInLeft" }} aria-valuenow={60} aria-valuemin={0} aria-valuemax={100}>
-                      <span className="percent-label">60%</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="progress-charts">
-                  <h6 className="heading heading-h6">Wordpress</h6>
-                  <div className="progress">
-                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style={{ width: "70%", visibility: "visible", animationDuration: "0.8s", animationDelay: "0.6s", animationName: "fadeInLeft" }} aria-valuenow={70} aria-valuemin={0} aria-valuemax={100}>
-                      <span className="percent-label">70%</span>
                     </div>
                   </div>
                 </div>

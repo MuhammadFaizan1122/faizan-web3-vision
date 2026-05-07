@@ -23,73 +23,105 @@ const EducationExperience = () => {
             Business consulting consultants provide expert advice and guida businesses to help them improve their performance, efficiency, and organizational
           </p>
         </div>
-        
+
         <h2 className="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">
           Education <span><Image src="/assets/images/custom-line/custom-line.png" alt="custom-line" width={100} height={20} /></span>
         </h2>
-        
+
         <div className="row g-5">
+          {/* Card 1: Diploma */}
           <div className="col-lg-6 col-sm-6">
             <div className="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1">
-              <h4 className="edu-sub-title">Trainer Marketing</h4>
-              <h2 className="edu-title">2005-2009</h2>
-              <p className="edu-para">A personal portfolio is a curated collection of an individual&apos;s professional work, showcasing their skills, experience A personal portfolio.</p>
+              <h4 className="edu-sub-title">Software Engineering Diploma</h4>
+              <h4 className="edu-sub-title">Aligarh Institute of Technology</h4>
+              <h2 className="edu-title">2019 - 2022</h2>
+              <p className="edu-para">
+                Completed a rigorous three-year program focusing on full-stack architecture,
+                database optimization, and software engineering lifecycle management.
+              </p>
             </div>
           </div>
+
+          {/* Card 2: Intermediate */}
           <div className="col-lg-6 col-sm-6">
             <div className="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2">
-              <h4 className="edu-sub-title">Assistant Director</h4>
-              <h2 className="edu-title">2010-2014</h2>
-              <p className="edu-para">Each project here showcases my commitment to excellence and adaptability, tailored to meet each client&apos;s unique needs.</p>
+              <h4 className="edu-sub-title">Intermediate (Pre-Engineering)</h4>
+              <h4 className="edu-sub-title">Board of Intermediate Education</h4>
+              <h2 className="edu-title">2017 - 2019</h2>
+              <p className="edu-para">
+                Established a strong analytical foundation in mathematics and physics,
+                paving the way for advanced studies in computational logic and engineering.
+              </p>
             </div>
           </div>
+
+          {/* Card 3: Meta Certification */}
           <div className="col-lg-6 col-sm-6">
             <div className="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
-              <h4 className="edu-sub-title">Design Assistant</h4>
-              <h2 className="edu-title">2008-2012</h2>
-              <p className="edu-para">I&apos;ve had the privilege of working with various clients, from startups to established companies, helping bring their visions to life.</p>
+              <h4 className="edu-sub-title">Meta Front-End Developer</h4>
+              <h4 className="edu-sub-title">Professional Certification</h4>
+              <h2 className="edu-title">Issued: 2023</h2>
+              <p className="edu-para">
+                Advanced specialization in modern frontend ecosystems including React,
+                Next.js, UI/UX accessibility standards, and professional version control.
+              </p>
             </div>
           </div>
+
+          {/* Card 4: Cisco CCIE */}
           <div className="col-lg-6 col-sm-6">
             <div className="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
-              <h4 className="edu-sub-title">Design Assistant</h4>
-              <h2 className="edu-title">2008-2012</h2>
-              <p className="edu-para">Each project here showcases my commitment to excellence and adaptability, tailored to meet each client&apos;s unique needs a personal.</p>
+              <h4 className="edu-sub-title">Cisco Certified Expert (CCIE)</h4>
+              <h4 className="edu-sub-title">Data Center Infrastructure</h4>
+              <h2 className="edu-title">Issued: 2022</h2>
+              <p className="edu-para">
+                Expert-level validation in designing and managing complex IT infrastructure,
+                bridging the gap between software development and hardware performance.
+              </p>
             </div>
           </div>
         </div>
-        
+
         <div className="experiences-wrapper">
           <div className="row">
             <div className="col-lg-6">
               <div className="experiences-wrap-left-content">
                 <h2 className="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  Experiences <span><Image src="/assets/images/custom-line/custom-line.png" alt="custom-line" width={100} height={20} /></span>
+                  Professional Experience <span><Image src="/assets/images/custom-line/custom-line.png" alt="custom-line" width={100} height={20} /></span>
                 </h2>
 
+                {/* Current Role */}
                 <div className="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  <p className="ex-subtitle">experience</p>
-                  <h2 className="ex-name">Soft Tech (2 Years)</h2>
-                  <h3 className="ex-title">UI/UX Designer</h3>
-                  <p className="ex-para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum desi dolore eu fugiat nulla pariatu Duis aute irure.</p>
+                  <p className="ex-subtitle">Mar 2024 - April 2026</p>
+                  <h2 className="ex-name">NextchainX</h2>
+                  <h3 className="ex-title">Team Lead | Full Stack Developer</h3>
+                  <p className="ex-para">
+                    Leading engineering efforts for 35+ Web3 and AI projects.
+                    Specializing in Next.js architecture and secure wallet integrations.
+                  </p>
                 </div>
+
+                {/* Previous Major Role */}
                 <div className="experience-content tmp-scroll-trigger tmp-fade-in animation-order-2">
-                  <p className="ex-subtitle">experience</p>
-                  <h2 className="ex-name">ModernTech (3 Years)</h2>
-                  <h3 className="ex-title">App Developer</h3>
-                  <p className="ex-para">In this portfolio, you&apos;ll find a curated selection of projects that highlight my skills in [Main Areas, e.g., responsive web design.</p>
+                  <p className="ex-subtitle">Dec 2021 - Feb 2024</p>
+                  <h2 className="ex-name">Mobitising</h2>
+                  <h3 className="ex-title">Senior JavaScript Developer</h3>
+                  <p className="ex-para">
+                    Architected high-performance MERN applications and integrated AI chatbots to enhance user engagement.
+                    Developed NFT staking platforms with automated reward systems.
+                  </p>
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="experiences-wrap-right-content">
-                <Image 
-                  className="tmp-scroll-trigger tmp-zoom-in animation-order-1" 
-                  src="/assets/images/experiences/expert-img.jpg" 
-                  alt="expert-img" 
-                  width={600} 
-                  height={800} 
-                  style={{ width: "100%", height: "auto" }} 
+                <Image
+                  className="tmp-scroll-trigger tmp-zoom-in animation-order-1"
+                  src="/assets/images/experiences/expert-img.jpg" // Note: Ensure this image matches your new professional brand
+                  alt="Muhammad Faizan - Senior Developer"
+                  width={600}
+                  height={800}
+                  style={{ width: "100%", height: "auto" }}
                 />
               </div>
             </div>

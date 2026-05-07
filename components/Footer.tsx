@@ -112,15 +112,14 @@ const Footer = () => {
                 </ul>
 
                 <div className="social-link-style-2 mt--30">
-                  <ul style={{ display: "flex", gap: "12px", listStyle: "none", padding: 0 }}>
-                    {['instagram', 'linkedin-in', 'twitter', 'facebook-f'].map((icon) => (
-                      <li key={icon}>
-                        <a href="#" className="social-icon">
-                          <i className={`fa-brands fa-${icon}`}></i>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="find-me-on tmp-fade-in">
+                    <h2 className="find-me-on-title">Find me on</h2>
+                    <div className="social-link banner">
+                      <Link href="https://www.linkedin.com/in/muhammad-faizan-3a120b230/" target="_blank"><i className="fa-brands fa-linkedin-in"></i></Link>
+                      <Link href="https://github.com/MuhammadFaizan1122" target="_blank"><i className="fa-brands fa-github"></i></Link>
+                      <Link href="mailto:muh.faizaan@gmail.com" target="_blank"><i className="fa-sharp fa-solid fa-envelope"></i></Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

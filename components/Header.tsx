@@ -65,10 +65,9 @@ const Header = () => {
                 <div className="tmp-header-right">
                   <div className="social-share-wrapper d-none d-md-block">
                     <div className="social-link">
-                      <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                      <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
-                      <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                      <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
+                      <Link href="https://www.linkedin.com/in/muhammad-faizan-3a120b230/" target="_blank"><i className="fa-brands fa-linkedin-in"></i></Link>
+                      <Link href="https://github.com/MuhammadFaizan1122" target="_blank"><i className="fa-brands fa-github"></i></Link>
+                      <Link href="mailto:muh.faizaan@gmail.com" target="_blank"><i className="fa-sharp fa-solid fa-envelope"></i></Link>
                     </div>
                   </div>
                   <div className="actions-area">

@@ -15,7 +15,7 @@ const AboutCounterSection = () => {
             <div className="year-of-expariance-wrapper bg-blur-style-one tmp-scroll-trigger tmp-fade-in animation-order-1">
               <div className="year-expariance-wrap">
                 <h2 className="year-number">
-                  <Counter end={25} />
+                  <Counter end={10} />
                 </h2>
                 <h3 className="year-title">Years Of <br /> experience</h3>
               </div>
@@ -30,23 +30,23 @@ const AboutCounterSection = () => {
                 <div className="col-lg-6 col-sm-6 col-12">
                   <div className="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1">
                     <h3 className="counter-title">
-                      <Counter end={20} />k+
+                      <Counter end={110} />+
                     </h3>
-                    <p className="counter-para">Our Project Complete</p>
+                    <p className="counter-para">Our Completed Projects</p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-sm-6 col-12">
                   <div className="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2">
                     <h3 className="counter-title">
-                      <Counter end={10} />k+
+                      <Counter end={2} />+
                     </h3>
-                    <p className="counter-para">Our Natural Products</p>
+                    <p className="counter-para">Our Products</p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-sm-6 col-12">
                   <div className="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
                     <h3 className="counter-title">
-                      <Counter end={200} />+
+                      <Counter end={100} />+
                     </h3>
                     <p className="counter-para">Clients Reviews</p>
                   </div>
@@ -54,9 +54,9 @@ const AboutCounterSection = () => {
                 <div className="col-lg-6 col-sm-6 col-12">
                   <div className="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
                     <h3 className="counter-title">
-                      <Counter end={1000} />+
+                      <Counter end={100} />+
                     </h3>
-                    <p className="counter-para">our Satisfied Clientd</p>
+                    <p className="counter-para">our Satisfied Clients</p>
                   </div>
                 </div>
               </div>

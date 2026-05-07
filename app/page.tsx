@@ -12,6 +12,7 @@ import Testimonial from "@/components/Testimonial";
 import GetInTouch from "@/components/GetInTouch";
 import BlogAndNews from "@/components/BlogAndNews";
 import Footer from "@/components/Footer";
+import AboutCounterSection from "@/components/AboutCounterSection";
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
       <Header />
       <Hero />
       <ServiceIcons />
-      <HomeCounter />
+      {/* <HomeCounter /> */}
+      <AboutCounterSection />
+
       <SkillsProgress />
       <LatestServicesHome />
       <EducationExperience />
@@ -27,7 +30,7 @@ export default function Home() {
       <LatestPortfolio />
       <MySkillCards />
       <Testimonial />
-      
+
       <GetInTouch />
 
       <BlogAndNews />

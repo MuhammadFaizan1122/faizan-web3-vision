@@ -16,7 +16,7 @@ import Link from "next/link";
 
 const Hero = () => {
   const heroRef = useRef(null);
-  const words = ["Web Designer", "Web Developer", "UI/UX Designer", "Stylish Model", "Content Writer"];
+  const words = ["Full Stack Developer", "MERN Specialist", "Frontend Architect", "UI/UX Enthusiast"];
 
   useScrollAnimation(heroRef);
 
@@ -62,9 +62,9 @@ const Hero = () => {
             </div>
             <div className="col-lg-6 order-lg-1 mt--100">
               <div className="inner">
-                <span className="sub-title tmp-fade-in">I am</span>
+                <span className="sub-title tmp-fade-in">I M </span>
                 <h1 className="title tmp-fade-in">
-                  Muhammad Faizan, a Full Stuck {' '}
+                  Muhammad Faizan, a <br />
                   <span className="header-caption">
                     <span className="cd-headline clip is-full-width">
                       <span className="cd-words-wrapper">
@@ -74,12 +74,12 @@ const Hero = () => {
                   </span>
                 </h1>
                 <p className="disc tmp-fade-in">
-                  A personal <span>portfolio</span> is a collection of your work, that is achievements, and skills that highlights in your abilities and professional <span>web design</span> growth.
+                  I help <span>visionaries</span> and startups build robust digital products. From initial architecture to final deployment, I craft scalable <span>web solutions</span> that bridge the gap between complex functionality and seamless user experience.
                 </p>
                 <div className="button-area-banner-two tmp-fade-in">
                   <Link className="tmp-btn hover-icon-reverse radius-round" href="/projects">
                     <span className="icon-reverse-wrapper">
-                      <span className="btn-text">View My Work</span>
+                      <span className="btn-text">Explore My Work</span>
                       <span className="btn-icon"><i className="fa-sharp fa-regular fa-arrow-right"></i></span>
                       <span className="btn-icon"><i className="fa-sharp fa-regular fa-arrow-right"></i></span>
                     </span>
@@ -88,10 +88,9 @@ const Hero = () => {
                 <div className="find-me-on tmp-fade-in">
                   <h2 className="find-me-on-title">Find me on</h2>
                   <div className="social-link banner">
-                    <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
+                    <Link href="https://www.linkedin.com/in/muhammad-faizan-3a120b230/" target="_blank"><i className="fa-brands fa-linkedin-in"></i></Link>
+                    <Link href="https://github.com/MuhammadFaizan1122" target="_blank"><i className="fa-brands fa-github"></i></Link>
+                    <Link href="mailto:muh.faizaan@gmail.com" target="_blank"><i className="fa-sharp fa-solid fa-envelope"></i></Link>
                   </div>
                 </div>
               </div>
