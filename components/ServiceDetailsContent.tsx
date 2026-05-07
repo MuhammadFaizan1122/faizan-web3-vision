@@ -2,21 +2,18 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useHoverAnimation } from "@/hooks/useHoverAnimation";
+import { ServiceContent, servicesData } from "@/data/services";
 
-const ServiceDetailsContent = () => {
+interface ServiceDetailsContentProps {
+  service: ServiceContent;
+}
+
+const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
   useScrollAnimation();
   useHoverAnimation();
-
-  const serviceCategories = [
-    "TechPros",
-    "NetWorks",
-    "DataMasters",
-    "Dibetics section",
-    "DigitalSolutions",
-    "CodeGenius"
-  ];
 
   return (
     <div className="service-details-area-wrapper tmp-section-gap">
@@ -25,59 +22,69 @@ const ServiceDetailsContent = () => {
           <div className="col-lg-8">
             <div className="service-thumnail-wrap tmp-scroll-trigger tmp-fade-in animation-order-1">
               <Image
-                src="/assets/images/services/service-detials-thumnail-wrap.png"
-                alt="thumnail-img"
+                src={service.thumbnailUrl}
+                alt={service.title}
                 width={800}
                 height={500}
                 className="w-100"
               />
             </div>
+            
             <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-              Elevated Designs Personalized the best Experiences
+              {service.title}
             </h2>
             <p className="doc-para tmp-scroll-trigger tmp-fade-in animation-order-3">
-              Web designing in a powerful way of just not an only professions, however, in a passion for our Company. We have to a tendency to believe the idea that smart looking of any websitet in on visitors.Web designing in a powerful way of
-              just not an only profession Web designing in a powerful way of just not an only
-            </p>
-            <h2 className="title-mini split-collab tmp-scroll-trigger tmp-fade-in animation-order-4">
-              My Experts Areas where i gained skill
-            </h2>
-            <p className="doc-para tmp-scroll-trigger tmp-fade-in animation-order-5">
-              Web designing in a powerful way of just not an only professions, however, in a passion for our Company. We have to a tendency to believe the idea that smart looking of any websitet in on visitors.Web designing in a powerful way of
-              just not an only profession Web designing in a powerful way of just not an only
-            </p>
-            <p className="doc-para tmp-scroll-trigger tmp-fade-in animation-order-6">
-              Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros
+              {service.overview}
             </p>
 
-            <h2 className="title-mini split-collab tmp-scroll-trigger tmp-fade-in animation-order-7">
-              My Experts Areas where i gained skill
+            <h2 className="title-mini split-collab tmp-scroll-trigger tmp-fade-in animation-order-4 mt--40">
+              Key Benefits
             </h2>
-            <p className="doc-para tmp-scroll-trigger tmp-fade-in animation-order-8">
-              Web designing in a powerful way of just not an only professions, however, in a passion for our Company. We have to a tendency to believe the idea that smart looking of any websitet in on visitors.Web designing in a powerful way of
-              just not an only profession Web designing in a powerful way of just not an only
-            </p>
-            <p className="doc-para tmp-scroll-trigger tmp-fade-in animation-order-9">
-              Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros
-            </p>
-            <p className="doc-para tmp-scroll-trigger tmp-fade-in animation-order-10">
-              viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros
-            </p>
+            <ul className="doc-para tmp-scroll-trigger tmp-fade-in animation-order-5" style={{ listStyleType: "disc", paddingLeft: "20px", marginBottom: "30px" }}>
+              {service.benefits.map((benefit, index) => (
+                <li key={index} className="mb--10">{benefit}</li>
+              ))}
+            </ul>
+
+            <h2 className="title-mini split-collab tmp-scroll-trigger tmp-fade-in animation-order-6">
+              Core Features & Technologies
+            </h2>
+            <ul className="doc-para tmp-scroll-trigger tmp-fade-in animation-order-7" style={{ listStyleType: "disc", paddingLeft: "20px", marginBottom: "30px" }}>
+              {service.features.map((feature, index) => (
+                <li key={index} className="mb--10">{feature}</li>
+              ))}
+            </ul>
+
+            <h2 className="title-mini split-collab tmp-scroll-trigger tmp-fade-in animation-order-8">
+              My Implementation Process
+            </h2>
+            <div className="doc-para tmp-scroll-trigger tmp-fade-in animation-order-9">
+              {service.process.map((step, index) => (
+                <div key={index} className="mb--20">
+                  <strong>Step {index + 1}: {step.step}</strong>
+                  <p>{step.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
+          
           <div className="col-lg-4">
             <div className="signle-side-bar service-list-area tmp-scroll-trigger tmp-fade-in animation-order-2">
               <div className="header">
                 <h3 className="title">Service Category</h3>
               </div>
               <div className="body">
-                {serviceCategories.map((category, index) => (
-                  <a key={index} href="#" className="single-service tmponhover">
-                    <p className="service-title">{category}</p>
-                    <span className="service-icon">
-                      <i className="fa-solid fa-angle-right"></i>
-                    </span>
-                  </a>
-                ))}
+                {servicesData.map((category, index) => {
+                  const isActive = category.slug === service.slug;
+                  return (
+                    <Link key={index} href={`/service-details/${category.slug}`} className={`single-service ${isActive ? "active" : ""}`}>
+                      <p className="service-title" style={isActive ? { color: "var(--color-primary)" } : {}}>{category.title}</p>
+                      <span className="service-icon" style={isActive ? { color: "var(--color-primary)" } : {}}>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </span>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>

@@ -22,7 +22,6 @@ export default function Home() {
       <ServiceIcons />
       {/* <HomeCounter /> */}
       <AboutCounterSection />
-
       <SkillsProgress />
       <LatestServicesHome />
       <EducationExperience />

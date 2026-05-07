@@ -78,10 +78,9 @@ const Footer = () => {
                 <h5 className="ft-title" style={{ color: "white", fontWeight: "700", marginBottom: "30px" }}>Quick Link</h5>
                 <ul className="ft-link" style={{ listStyle: "none", padding: 0, lineHeight: "2.5" }}>
                   <li><Link href="/about" className="ft-link-item">About Me</Link></li>
-                  <li><a href="/#services" className="ft-link-item">Service</a></li>
+                  <li><Link href="/services" className="ft-link-item">Service</Link></li>
+                  <li><Link href="/blog" className="ft-link-item">Blog Post</Link></li>
                   <li><Link href="/contact" className="ft-link-item">Contact Me</Link></li>
-                  <li><a href="/#blog" className="ft-link-item">Blog Post</a></li>
-                  <li><a href="/#pricing" className="ft-link-item">Pricing</a></li>
                 </ul>
               </div>
             </div>

@@ -13,11 +13,8 @@ const ServicesPage = () => {
     <main>
       <Header />
       <PageBanner title="My Service" subtitle="Service" />
-      
       <LatestServices />
-      <PricingPlan />
       <GetInTouch />
-      
       <Footer />
     </main>
   );

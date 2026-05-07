@@ -19,8 +19,8 @@ const ContactInfo = () => {
                   <i className="fa-solid fa-location-dot"></i>
                 </div>
                 <h3 className="title">Address</h3>
-                <p className="para">3891 Ranchview Dr. Richardson</p>
-                <p className="para">California, USA</p>
+                <p className="para">Sector: 11-F, New Karachi</p>
+                <p className="para">Karachi, Pakistan</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
@@ -29,11 +29,11 @@ const ContactInfo = () => {
                   <i className="fa-solid fa-envelope"></i>
                 </div>
                 <h3 className="title">E-mail</h3>
-                <a href="mailto:example@gmail.com">
-                  <p className="para">example@gmail.com</p>
+                <a href="mailto:muh.faizaan@gmail.com">
+                  <p className="para">muh.faizaan@gmail.com</p>
                 </a>
-                <a href="mailto:info@example.com">
-                  <p className="para">info@example.com</p>
+                <a href="mailto:alexxxjohn885@gmail.com">
+                  <p className="para">alexxxjohn885@gmail.com</p>
                 </a>
               </div>
             </div>
@@ -43,11 +43,11 @@ const ContactInfo = () => {
                   <i className="fa-solid fa-phone"></i>
                 </div>
                 <h3 className="title">Call Me</h3>
-                <a href="tel:01245789321">
-                    <p className="para">01245789321</p>
+                <a href="tel:+923002493788">
+                  <p className="para">+92 300 2493 788</p>
                 </a>
-                <a href="tel:9876543210">
-                    <p className="para">+9876543210</p>
+                <a href="tel:19296218820">
+                  <p className="para">+19296218820</p>
                 </a>
               </div>
             </div>

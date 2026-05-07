@@ -38,20 +38,15 @@ const Header = () => {
                   <ul className="tmp-mainmenu">
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About</Link></li>
-                    <li className="has-dropdown">
-                      <Link href="/services">Services <i className="fa-regular fa-chevron-down"></i></Link>
-                      <ul className="submenu">
-                        <li><Link href="/services">Service</Link></li>
-                        <li><Link href="/service-details">Service Details</Link></li>
-                      </ul>
-                    </li>
-                    <li className="has-dropdown">
+                    <li><Link href="/services">Services</Link></li>
+                    <li><Link href="/blog">Blog</Link></li>
+                    {/* <li className="has-dropdown">
                       <Link href="/blog">Blog <i className="fa-regular fa-chevron-down"></i></Link>
                       <ul className="submenu">
                         <li><Link href="/blog">Blog Classic</Link></li>
                         <li><Link href="/blog-details">Blog Details</Link></li>
                       </ul>
-                    </li>
+                    </li> */}
                     <li className="has-dropdown">
                       <Link href="/projects">Project <i className="fa-regular fa-chevron-down"></i></Link>
                       <ul className="submenu">
