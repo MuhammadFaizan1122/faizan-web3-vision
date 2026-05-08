@@ -79,7 +79,7 @@ const Footer = () => {
                 <ul className="ft-link" style={{ listStyle: "none", padding: 0, lineHeight: "2.5" }}>
                   <li><Link href="/about" className="ft-link-item">About Me</Link></li>
                   <li><Link href="/services" className="ft-link-item">Service</Link></li>
-                  <li><Link href="/blog" className="ft-link-item">Blog Post</Link></li>
+                  {/* <li><Link href="/blog" className="ft-link-item">Blog Post</Link></li> */}
                   <li><Link href="/contact" className="ft-link-item">Contact Me</Link></li>
                 </ul>
               </div>
