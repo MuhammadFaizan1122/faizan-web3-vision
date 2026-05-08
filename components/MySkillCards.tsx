@@ -16,7 +16,7 @@ const MySkillCards = () => {
 
     const widgetRect = widgetRef.current.getBoundingClientRect();
     const elementRect = element.getBoundingClientRect();
-    
+
     const topOff = elementRect.top - widgetRect.top;
     const height = elementRect.height;
 
@@ -27,7 +27,7 @@ const MySkillCards = () => {
   useEffect(() => {
     const activeElement = widgetRef.current?.querySelectorAll('.service-item')[hoverIndex !== null ? hoverIndex : activeIndex] as HTMLElement;
     updateActiveBg(activeElement);
-    
+
     const handleResize = () => {
       const activeElement = widgetRef.current?.querySelectorAll('.service-item')[hoverIndex !== null ? hoverIndex : activeIndex] as HTMLElement;
       updateActiveBg(activeElement);
@@ -50,14 +50,10 @@ const MySkillCards = () => {
   };
 
   const getClassNames = (index: number) => {
-    const isCurrent = index === activeIndex;
-    const isHovered = index === hoverIndex;
     const activeTarget = hoverIndex !== null ? hoverIndex : activeIndex;
-    
     let classes = "service-item tmp-scroll-trigger tmp-fade-in";
-    if (isCurrent) classes += " current";
+    if (index === activeIndex) classes += " current";
     if (index !== activeTarget) classes += " mleave";
-    
     return classes;
   };
 
@@ -66,75 +62,78 @@ const MySkillCards = () => {
       <div className="container">
         <div className="section-head text-align-left mb--50">
           <div className="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-            <span className="subtitle">My Skill</span>
+            <span className="subtitle">Core Expertise</span>
           </div>
           <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-            Elevated Designs Personalized <br /> the best Experiences
+            Engineering High-Performance <br /> Digital Ecosystems
           </h2>
         </div>
         <div className="services-widget v1" ref={widgetRef} onMouseLeave={handleMouseLeave}>
-          
-          <div 
-            className={getClassNames(0)} 
+
+          {/* Skill 1: Full Stack */}
+          <div
+            className={getClassNames(0)}
             onMouseEnter={() => handleMouseEnter(0)}
             onClick={() => handleClick(0)}
-            style={{ animationOrder: 1 } as React.CSSProperties}
+            style={{ "--animation-order": 1 } as React.CSSProperties}
           >
             <div className="my-skill-card">
               <div className="card-icon">
-                <i className="fa-light fa-building-columns"></i>
+                <i className="fa-light fa-layer-group"></i>
               </div>
               <div className="card-title">
-                <h3 className="main-title">Ui/visual Design</h3>
-                <p className="sub-title">21 Done</p>
+                <h3 className="main-title">Full Stack Engineering</h3>
+                <p className="sub-title">25+ Projects</p>
               </div>
-              <p className="card-para">My work is driven by the belief that thoughtful design and strategic planning can empower brands strategic planning can empower brands</p>
-              <Link href="#" className="read-more-btn">
-                Read More <span className="read-more-icon"><i className="fa-solid fa-angle-right"></i></span>
+              <p className="card-para">Expertise in the MERN stack and Next.js. I architect scalable backends with Node.js/Express and build high-performance, type-safe frontends using TypeScript and Tailwind CSS.</p>
+              <Link href="/services/full-stack" className="read-more-btn">
+                View Tech Stack <span className="read-more-icon"><i className="fa-solid fa-angle-right"></i></span>
               </Link>
             </div>
             <button className="service-link modal-popup"></button>
           </div>
-          
-          <div 
-            className={getClassNames(1)} 
+
+          {/* Skill 2: Web3 */}
+          <div
+            className={getClassNames(1)}
             onMouseEnter={() => handleMouseEnter(1)}
             onClick={() => handleClick(1)}
-            style={{ animationOrder: 2 } as React.CSSProperties}
+            style={{ "--animation-order": 2 } as React.CSSProperties}
           >
             <div className="my-skill-card">
               <div className="card-icon">
-                <i className="fa-light fa-calendar"></i>
+                <i className="fa-light fa-circle-nodes"></i>
               </div>
               <div className="card-title">
-                <h3 className="main-title">Ui/visual Design</h3>
-                <p className="sub-title">21 Done</p>
+                <h3 className="main-title">Blockchain & Web3</h3>
+                <p className="sub-title">10+ Live dApps</p>
               </div>
-              <p className="card-para">In this portfolio, you’ll find a curated selection of projects that highlight my skills in [Main Areas, e.g., responsive web design</p>
-              <Link href="#" className="read-more-btn">
-                Read More <span className="read-more-icon"><i className="fa-solid fa-angle-right"></i></span>
+              <p className="card-para" style={{ textAlign: "left" }}>Specialized in the Solana ecosystem. I build secure smart contracts, NFT launchpads (Metaplex), staking protocols, and RWA tokenization platforms with seamless wallet integrations.</p>
+              <Link href="/services/web3" className="read-more-btn">
+                View Web3 Projects <span className="read-more-icon"><i className="fa-solid fa-angle-right"></i></span>
               </Link>
             </div>
             <button className="service-link modal-popup"></button>
           </div>
-          
-          <div 
-            className={getClassNames(2)} 
+
+          {/* Skill 3: AI & Real-Time */}
+          <div
+            className={getClassNames(2)}
             onMouseEnter={() => handleMouseEnter(2)}
             onClick={() => handleClick(2)}
-            style={{ animationOrder: 3 } as React.CSSProperties}
+            style={{ "--animation-order": 3 } as React.CSSProperties}
           >
             <div className="my-skill-card">
               <div className="card-icon">
-                <i className="fa-light fa-pen-nib"></i>
+                <i className="fa-light fa-microchip-ai"></i>
               </div>
               <div className="card-title">
-                <h3 className="main-title">Motion Design</h3>
-                <p className="sub-title">20 Done</p>
+                <h3 className="main-title">AI & Real-Time Systems</h3>
+                <p className="sub-title">Production Ready</p>
               </div>
-              <p className="card-para">Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs</p>
-              <Link href="#" className="read-more-btn">
-                Read More <span className="read-more-icon"><i className="fa-solid fa-angle-right"></i></span>
+              <p className="card-para" style={{ textAlign: "left" }}>Integrating LLMs (GPT-4) for intelligent agents and building low-latency real-time systems using WebRTC and HLS for global video and audio broadcasting platforms.</p>
+              <Link href="/services/ai" className="read-more-btn">
+                Discover Solutions <span className="read-more-icon"><i className="fa-solid fa-angle-right"></i></span>
               </Link>
             </div>
             <button className="service-link modal-popup"></button>

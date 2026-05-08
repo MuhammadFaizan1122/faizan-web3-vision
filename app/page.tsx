@@ -29,9 +29,7 @@ export default function Home() {
       <LatestPortfolio />
       <MySkillCards />
       <Testimonial />
-
       <GetInTouch />
-
       <BlogAndNews />
       <Footer />
     </main>
