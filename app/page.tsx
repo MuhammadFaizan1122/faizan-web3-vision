@@ -86,7 +86,7 @@ export default function Home() {
       <MySkillCards />
       <Testimonial />
       <GetInTouch />
-      <BlogAndNews />
+      {/* <BlogAndNews /> */}
       <Footer />
     </main>
   );
