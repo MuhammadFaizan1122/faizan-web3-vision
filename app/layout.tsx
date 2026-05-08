@@ -1,5 +1,6 @@
 import "./globals.css";
 export const metadata = {
+  metadataBase: new URL("https://imfaizan.com"),
   title: "Muhammad Faizan | Full Stack Web2, Web3 & AI Developer | Next.js & Solana Expert",
   description:
     "Muhammad Faizan is a Senior Full Stack Developer specializing in high-performance Next.js applications, Solana Web3 ecosystems, and AI-driven SaaS platforms. Building scalable blockchain solutions, NFT marketplaces, and modern MERN stack web applications for global clients.",

@@ -89,13 +89,13 @@ const GetInTouch = () => {
                     <span className="subtitle">CONTACT ME</span>
                   </div>
                   <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-                    Let's Build the Future of Web3 & AI Together
+                    Let&apos;s Build the Future of Web3 & AI Together
                   </h2>
                   <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    Whether you're looking to launch a secure DeFi platform on
+                    Whether you&apos;re looking to launch a secure DeFi platform on
                     Solana, integrate advanced AI agents into your workflow, or
-                    build a scalable Next.js application, I'm here to lead the
-                    technical execution. Let's discuss how my 10+ years of
+                    build a scalable Next.js application, I&apos;m here to lead the
+                    technical execution. Let&apos;s discuss how my 10+ years of
                     experience and 35+ delivered projects can bring your vision
                     to life.
                   </p>
