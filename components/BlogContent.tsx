@@ -31,8 +31,8 @@ const BlogContent = () => {
                       alt={post.title}
                       width={800}
                       height={450}
-                      className="img-primary w-100 h-auto"
-                      style={{ objectFit: "cover" }}
+                      className="w-100 h-auto"
+                      style={{ objectFit: "cover", display: "block" }}
                     />
                   </Link>
                 </div>

@@ -39,21 +39,16 @@ const Header = () => {
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About</Link></li>
                     <li><Link href="/services">Services</Link></li>
-                    <li><Link href="/blog">Blog</Link></li>
-                    {/* <li className="has-dropdown">
-                      <Link href="/blog">Blog <i className="fa-regular fa-chevron-down"></i></Link>
-                      <ul className="submenu">
-                        <li><Link href="/blog">Blog Classic</Link></li>
-                        <li><Link href="/blog-details">Blog Details</Link></li>
-                      </ul>
-                    </li> */}
+                    <li><Link href="/blog">Blogs</Link></li>
+                    <li><Link href="/projects">Projects</Link></li>
+                    {/*                  
                     <li className="has-dropdown">
                       <Link href="/projects">Project <i className="fa-regular fa-chevron-down"></i></Link>
                       <ul className="submenu">
                         <li><Link href="/projects">Project</Link></li>
                         <li><Link href="/project-details">Project Details</Link></li>
                       </ul>
-                    </li>
+                    </li> */}
                     <li><Link href="/contact">Contact</Link></li>
                   </ul>
                 </nav>
