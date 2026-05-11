@@ -19,16 +19,16 @@ export const projects: Project[] = [
     url: "https://theorionai.app",
     techStack: ["Next.js", "Node.js", "TypeScript", "WhatsApp API"],
   },
-  {
-    slug: "jito-cabal",
-    title: "Jito Cabal",
-    subtitle: "jitocabal.com",
-    description:
-      "Built from scratch — full-stack NFT minting platform on Solana. Next.js frontend, MongoDB backend, Metaplex collection integration, and secure wallet authentication. End-to-end solo build.",
-    image: "/assets/images/latest-portfolio/Jito-Cabal.png",
-    url: "https://jitocabal.com",
-    techStack: ["Next.js", "Solana", "MongoDB", "Metaplex"],
-  },
+  // {
+  //   slug: "jito-cabal",
+  //   title: "Jito Cabal",
+  //   subtitle: "jitocabal.com",
+  //   description:
+  //     "Built from scratch — full-stack NFT minting platform on Solana. Next.js frontend, MongoDB backend, Metaplex collection integration, and secure wallet authentication. End-to-end solo build.",
+  //   image: "/assets/images/latest-portfolio/Jito-Cabal.png",
+  //   url: "https://jitocabal.com",
+  //   techStack: ["Next.js", "Solana", "MongoDB", "Metaplex"],
+  // },
   {
     slug: "schindlersx",
     title: "SchindlersX",
@@ -49,16 +49,16 @@ export const projects: Project[] = [
     url: "https://everyone.world",
     techStack: ["Next.js", "Node.js", "MongoDB", "Ethereum", "AWS"],
   },
-  {
-    slug: "geniblox",
-    title: "GeniBlox",
-    subtitle: "geniblox-six.vercel.app",
-    description:
-      "Built from scratch — AI + blockchain platform with generative AI chatbot solutions for sales automation and customer support. Full-stack solo build integrating LLM APIs with blockchain features.",
-    image: "/assets/images/latest-portfolio/geniblox.png",
-    url: "https://geniblox-six.vercel.app",
-    techStack: ["Next.js", "LLM APIs", "Blockchain", "Node.js"],
-  },
+  // {
+  //   slug: "geniblox",
+  //   title: "GeniBlox",
+  //   subtitle: "geniblox-six.vercel.app",
+  //   description:
+  //     "Built from scratch — AI + blockchain platform with generative AI chatbot solutions for sales automation and customer support. Full-stack solo build integrating LLM APIs with blockchain features.",
+  //   image: "/assets/images/latest-portfolio/geniblox.png",
+  //   url: "https://geniblox-six.vercel.app",
+  //   techStack: ["Next.js", "LLM APIs", "Blockchain", "Node.js"],
+  // },
   {
     slug: "solana-toolset",
     title: "Solana Toolset",

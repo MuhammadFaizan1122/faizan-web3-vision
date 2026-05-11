@@ -26,16 +26,16 @@ const featuredProjects: Project[] = [
     url: "https://theorionai.app",
     techStack: ["Next.js", "Node.js", "TypeScript", "WhatsApp API"],
   },
-  {
-    slug: "jito-cabal",
-    title: "Jito Cabal",
-    subtitle: "NFT Minting Platform",
-    description:
-      "Built from scratch — full-stack NFT minting platform on Solana. Next.js frontend, MongoDB backend, Metaplex collection integration, and secure wallet authentication.",
-    image: "/assets/images/latest-portfolio/Jito-Cabal.png",
-    url: "https://jitocabal.com",
-    techStack: ["Next.js", "Solana", "MongoDB", "Metaplex"],
-  },
+  // {
+  //   slug: "jito-cabal",
+  //   title: "Jito Cabal",
+  //   subtitle: "NFT Minting Platform",
+  //   description:
+  //     "Built from scratch — full-stack NFT minting platform on Solana. Next.js frontend, MongoDB backend, Metaplex collection integration, and secure wallet authentication.",
+  //   image: "/assets/images/latest-portfolio/Jito-Cabal.png",
+  //   url: "https://jitocabal.com",
+  //   techStack: ["Next.js", "Solana", "MongoDB", "Metaplex"],
+  // },
   {
     slug: "everyone-world",
     title: "Everyone.world",
